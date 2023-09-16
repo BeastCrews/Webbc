@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tampilkan dan Hapus Tombol Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h2>Tampilkan dan Hapus Tombol Login</h2>
+
+    <!-- Tombol utama untuk menampilkan dan menghapus tombol login -->
+    <button id="toggleLoginButtons" class="main-button">Tampilkan/sembunyikan Tombol Login</button>
+
+    <!-- Container untuk tombol-tombol login -->
+    <div id="loginButtonContainer"></div>
+
+    <!-- Container untuk pop-up login -->
+    <div id="loginPopup" class="popup">
+        <h3>Pop-up Login</h3>
+        <!-- Isi dengan formulir login Anda -->
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <button type="submit" class="login-button">Login</button>
+        </form>
+    </div>
+
+    <!-- Overlay untuk latar belakang saat pop-up muncul -->
+    <div id="overlay" class="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
